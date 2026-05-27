@@ -1,0 +1,17 @@
+# Ignore log files
+*.log
+
+# Ignore node modules folder
+node_modules/
+
+# Ignore temporary files
+temp/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore specific file
+secret.txt
+
+# Ignore temp files
+*.temp
