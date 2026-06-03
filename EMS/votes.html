@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vote</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 300px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+
+        }
+
+
+        .item input[type="radio"] {
+            transform: scale(1.3);
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .item p {
+            margin: 8px 0;
+            color: #444;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .but {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+
+        .but:hover {
+            background: #2980b9;
+        }
+
+        .but:active {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Voting Page</h1>
+
+    <h3>President Election</h3>
+
+    <div class="container">
+
+        <div class="item">
+
+            <input type="radio" name="voting" id="voting1" value="cand1"> Candidate1<br>
+            <p>Name : Virat Kohli</p>
+            <p>Flat No : 1-97/1</p>
+            <p>Position : President</p>
+            <p>Manifesto : Better Security</p> <br>
+        </div>
+
+        <div class="item">
+
+            <input type="radio" name="voting" id="voting2" value="cand2"> Candidate2 <br>
+            <p>Name : Virat Kohli</p>
+            <p>Flat No : 1-97/2</p>
+            <p>Position : President</p>
+            <p>Manifesto : Better Maintenance</p>
+
+        </div>
+
+    </div><br>
+
+    <button type="submit" class="but">SUBMIT</button>
+
+</body>
+
+</html>

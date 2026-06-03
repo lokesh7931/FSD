@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        .example {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            animation: anim 4s ease-in-out 1s 3;
+            text-align: center;
+            transform-origin: left;
+
+
+        }
+
+        @keyframes anim {
+            0% {
+                background-color: red;
+                border-radius: 0%;
+                transform: translateX(0px);
+            }
+
+            50% {
+                background-color: yellow;
+                transform: translateX(200px);
+            }
+
+            100% {
+                background-color: blue;
+                transform: rotate(80deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="example">
+        Animations
+    </div>
+
+</body>
+
+</html>

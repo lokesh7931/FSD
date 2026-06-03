@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: yellow;
+            width: 300px;
+        }
+
+        .item {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: aqua;
+            margin: 20px;
+            width: 40px;
+            height: 20px;
+        }
+
+
+        @media screen and (max-width:400px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: rebeccapurple;
+
+                width: 300px;
+            }
+
+            .item {
+                border: 1px solid black;
+                padding: 20px;
+                background-color: red;
+                margin: 20px;
+                width: 40px;
+                height: 20px;
+            }
+
+        }
+
+        @media screen and (min-width :401px) and (max-width:800px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: pink;
+                ;
+                width: 300px;
+            }
+
+            .item {
+                border: 1px solid black;
+                padding: 20px;
+                background-color: orange;
+                margin: 20px;
+                width: 40px;
+                height: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="item">
+            Box 1
+        </div>
+
+        <div class="item">
+            Box 2
+        </div>
+
+        <div class="item">
+            Box 3
+        </div>
+
+    </div>
+
+</body>
+
+</html>
